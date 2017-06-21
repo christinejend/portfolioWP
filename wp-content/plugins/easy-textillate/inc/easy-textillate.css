@@ -1,0 +1,416 @@
+.grid * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+.grid {
+  margin: 0;
+  background: #282828;
+  color: #eee;
+  font-family: 'Helvetica Neue', Arial, 'Liberation Sans', FreeSans, sans-serif;
+  font-size: 14px;
+}
+
+.grid h1, .grid h2, .grid h3, .grid h4, .grid h5, .grid h6 {
+  margin: 10px 0;
+  font-weight: 200;
+}
+
+.grid h2 {
+  font-size: 1.8em;
+  font-weight: 200;
+  color: #888;
+  letter-spacing: 1px;
+} 
+
+.grid section {
+  margin-bottom: 20px;
+}
+
+.grid p {
+  margin: 0;
+  line-height: 1.5;
+  font-weight: 200;
+}
+
+.grid a {
+  color: #00aaee;
+  text-decoration: none;
+}
+
+.grid a:hover {
+  color: #0077a2;
+  text-decoration: underline;
+}
+
+.grid .hide {
+  display: none;
+}
+
+.grid .decal {
+  height: 2px;
+  background-color: #000;
+  border-bottom: 1px solid #333;
+}
+
+.grid .container {
+  max-width: 940px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* EFFECTS
+***************/
+
+.grid .glow {
+  text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    -webkit-transition: text-shadow 1s linear;
+       -moz-transition: text-shadow 1s linear;
+         -o-transition: text-shadow 1s linear;
+            transition: text-shadow 1s linear;
+}
+
+.grid .glow.in {
+  text-shadow: 
+    0.025em 0.025em 0.025em rgba(0, 0, 0, 0.8),
+    0 0 0.5em rgba(255, 255, 255, 0.3);
+}
+
+.grid .fade {
+  opacity: 0;
+    -webkit-transition: opacity 1s linear;
+       -moz-transition: opacity 1s linear;
+         -o-transition: opacity 1s linear;
+            transition: opacity 1s linear;
+}
+
+.grid .fade.in {
+  opacity: 1;
+}
+
+/* BUTTONS
+***************/
+
+.grid .btn {
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 200;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  border-radius: 0.5em;
+  padding: 0.8em 1.2em;
+  background-color: #ED303C;
+  background-image: -moz-linear-gradient(top, #ED303C, #8D121A);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ED303C), to(#8D121A));
+  background-image: -webkit-linear-gradient(top, #ED303C, #8D121A);
+  background-image: -o-linear-gradient(top, #ED303C, #8D121A);
+  background-image: linear-gradient(to bottom, #ED303C, #8D121A);
+  background-repeat: repeat-x;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25);
+     -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25);
+          box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25);
+}
+
+.grid .btn:hover,
+.grid .btn-primary:active,
+.grid .btn-primary.active,
+.grid .btn-primary.disabled,
+.grid .btn-primary[disabled] {
+  text-decoration: none;
+  color: #ddd;
+  background-color: #8D121A;
+  background-position: 0 -15px;
+  -webkit-transition: background-position 0.1s linear;
+     -moz-transition: background-position 0.1s linear;
+       -o-transition: background-position 0.1s linear;
+          transition: background-position 0.1s linear;
+}
+
+.grid .btn.active,
+.grid .btn:active {
+  background-image: none;
+  outline: 0;
+  -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+     -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+          box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+/* MARKETING
+***************/
+
+.grid .jumbotron {
+  position: relative;
+  padding: 3em 0;
+  text-align: center;
+  background: #242424;
+}
+
+.grid .jumbotron h1 {
+  color: #fff;
+  font-family: Rokkitt;
+  font-size: 13em;
+  font-weight: 200;
+  text-shadow: 0.025em 0.025em 0.025em rgba(0, 0, 0, 0.8);
+  visibility: hidden;
+}
+
+.grid .jumbotron h1 .char11 {
+  color: #ED303C;
+}
+
+.grid .jumbotron p {
+  margin-top: -1em;
+  letter-spacing: 0.15em;
+  color: #ccc;
+  font-size: 1.25em;
+  font-weight: 200;
+  text-shadow: 0.1em 0.1em 0.1em rgba(0, 0, 0, 0.8);
+  visibility: hidden;
+  text-align: center;
+}
+
+.grid .jumbotron .btn {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  font-size: 1.6em;
+}
+
+
+.grid .playground {
+  background: #242424;
+  border-radius: 4px;
+  border: 1px solid #333;
+  margin-bottom: 10px;
+}
+
+.grid .playground .controls {
+  margin-bottom: 0;
+  background: #282828;
+  border-radius: 0 0 4px 4px;
+  border: 1px solid #0c0c0c;
+  border-top: 1px solid #333;
+}
+
+.grid .playground .controls form {
+  margin-bottom: 0;
+  padding-bottom: 8px;
+}
+
+.grid .playground .controls select {
+  width: 48%;
+  margin-right: 4px;
+}
+
+@media (max-width: 480px) {
+  .grid .playground .controls select {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+.grid .playground .viewport {
+  display: table;
+  min-height: 10em;
+  padding: 20px;
+  border-radius: 4px 4px 0 0;
+  border: 1px solid #0c0c0c;
+  overflow: hidden;
+  -webkit-box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.5);
+     -moz-box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.5);
+          box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.5);
+}
+
+.grid .playground .viewport .tlt {
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 20px 0;
+  display: inline-block;
+  vertical-align: middle;
+  display: table-cell;
+  text-align: center;
+  /*visibility: hidden;*/
+}
+
+.grid .deps {
+  font-size: 1.2em;
+}
+
+.grid .deps ul {
+  list-style-type: square;
+  margin: 0;
+}
+
+.grid .deps ul li {
+  line-height: 1.5em
+  font-weight: 200;
+}
+
+.about ul li {
+
+    list-style-type: square;
+    margin: 0px 0px 3px 35px;
+    padding: 0px 0px 0px 0px;
+}
+
+
+
+/* GRID 
+***************/ 
+
+.grid:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.grid [class*='col-'] {
+  float: left;
+  padding-right: 20px;
+}
+.grid [class*='col-']:last-of-type {
+  padding-right: 0;
+}
+
+.grid .col-1-1 {
+  width: 100%;
+}
+
+.grid .col-2-3 {
+  width: 66.66%;
+}
+
+.grid .col-1-3 {
+  width: 33.33%;
+}
+
+.grid .col-1-2 {
+  width: 50%;
+}
+
+.grid .col-1-4 {
+  width: 25%;
+}
+
+.grid .col-3-4 {
+  width: 75%;
+}
+
+.grid .col-4-5 {
+  width: 80%;
+}
+
+.grid .col-1-6 {
+  width: 16.66%;
+}
+
+.grid .col-1-8 {
+  width: 12.5%;
+}
+
+.grid .grid-pad {
+  padding-left: 20px
+}
+
+.grid .grid-pad [class*='col-'] {
+  padding-top: 20px;
+  padding-top: 20px;
+}
+
+.grid .grid-pad [class*='col-']:last-of-type {
+  padding-right: 20px;
+}
+
+@media (max-width: 767px) {
+  .grid [class*='col-'] {
+    width: 100%;
+  }
+}
+
+/* FORM
+*********/
+
+.grid form .control {
+  margin-bottom: 5px;
+}
+
+.grid  textarea {
+width: 97%;
+  display: inline-block;
+  height: 50px;
+  padding: 4px 6px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #555555;
+  vertical-align: middle;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+} 
+
+.grid select, 
+.grid input[type="text"] {
+  width: 100%;
+  display: inline-block;
+  height: 30px;
+  padding: 4px 6px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #555555;
+  vertical-align: middle;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+}
+
+.grid input[type="text"] {
+  background-color: #ddd;
+  border: 1px solid #ccc;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+     -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+       -o-transition: border linear 0.2s, box-shadow linear 0.2s;
+          transition: border linear 0.2s, box-shadow linear 0.2s;
+}
+
+.grid input[type="text"]:focus {
+  background-color: #fff;
+  border-color: #8D121A;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px #8D121A, 0 0 8px #ED303C;
+     -moz-box-shadow: inset 0 1px 1px #8D121A, 0 0 8px #ED303C;
+          box-shadow: inset 0 1px 1px #8D121A, 0 0 8px #ED303C;
+}
+
+.grid label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.grid label.inline {
+  display: inline-block;
+}
+
+.grid label.checkbox {
+  padding: 4px 0;
+  margin-right: 10px;
+  white-space: nowrap;
+  vertical-align: top;
+}
+
+/* CODE 
+**************/
+
+.grid pre code {
+  background: transparent;
+}
